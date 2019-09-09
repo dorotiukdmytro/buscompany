@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #eee;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #757575;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #616161;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+h2 {
+  width: 50%;
+  padding: 0 10px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  font-size: 34px;
+  border-bottom: 3px solid #d67601;
+}
+
+section {
+  padding: 100px 50px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+
+table th,
+table td {
+  height: 50px;
+  border: 1px solid #000;
+}
+
+table th {
+  font-size: 24px;
+}
+
+/* -----NAVIGATION------ */
+.nav-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #ffe082;
+  z-index: 1;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-items li {
+  margin-right: 20px;
+
+}
+
+.nav-items li a {
+  padding: 15px;
+  font-size: 22px;
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: .3s;
+}
+
+.nav-items li a:hover {
+  box-shadow: 2px 1px 1px #000;
+}
+
+.header-box {
+  height: 100vh;
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .6);
+  color: #ccc;
+}
+
+.header-inner h1,
+.header-inner p {
+  margin-bottom: 100px;
+} 
+
+.header-inner h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.header-inner p {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.header-inner button {
+  padding: 20px 30px;
+  font-size: 40px;
+  font-weight: 700;
+  background-color: rgba(255, 224, 130, 0.8);
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.header-inner button:hover {
+  padding: 20px 40px;
+  background-color:  rgb(255, 224, 130);
+}
+
+.header-inner button a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* ----LANGUAGE BOS---- */
+
+.language-box a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  margin-left: 5px;
+  padding: 10px 5px;
+  border-radius: 10px;
+  transition: .2s;
+}
+
+.language-box a:hover {
+  box-shadow: 2px 1px 1px #000;
+}
+
+/* ------OBUT US------ */
+
+.about-us {
+  width: 70%;
+  margin: 150px auto 0 auto;
+  padding: 50px 30px;
+  background-color: #f3f2f2;
+  box-shadow: 0px 0px 15px 5px #8c8b8b;
+  border-radius: 20px;
+}
+
+.about-us p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.about-us p span {
+  font-weight: bold;
+}
+
+/* -----TIMETABLE------- */
+
+.timetable {
+  text-align: center;
+}
+
+.timetable p {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.timetable-table {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.timetable-table td {
+  font-size: 18px;
+}
+
+.timetable-table .city {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.from-ua,
+.from-pl {
+  background-color: #fff;
+}
+
+/* -----PRICE------ */
+.price {
+  background-color: #fff;
+}
+
+.price-table {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.price-table th,
+.city-price {
+  background-color: #ffe082;
+}
+
+.price-table .element-bg {
+  font-weight: 700;
+  transition: .2s;
+}
+
+.price-table .element-bg:hover {
+  transition: .2s;
+  background-color: #ffe082;
+}
+
+.city-price {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* ----GALLERY---- */
+
+/* ----CONTACT---- */
+.contact {
+  background-color: #f3f2f2;
+}
+
+.contact-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 60%;
+  margin: 25px auto; 
+}
+
+.contact-box p {
+  padding: 10px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ----UP-ARROW---- */
+
+.arrow-box {
+  -webkit-tap-highlight-color: transparent;
+  position: fixed;
+  bottom: -50px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  color: #000;
+  text-align: center;
+  background-color: #ffd350;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  transition: .3s;
+  z-index: 10;
+  opacity: 0;
+}
+
+.arrow-box:hover {
+  background-color: #d67601;
+}
+
+.arrow-box.visible {
+  opacity: 1;
+  bottom: 0;
+}
+
+.arrow-box i {
+  line-height: 50px;
+}
+
+/* ----FOOTER---- */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+}
