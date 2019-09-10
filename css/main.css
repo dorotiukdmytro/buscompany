@@ -76,7 +76,6 @@ table th {
 
 .nav-items li {
   margin-right: 20px;
-
 }
 
 .nav-items li a {
@@ -91,6 +90,7 @@ table th {
 
 .nav-items li a:hover {
   box-shadow: 2px 1px 1px #000;
+  background-color: #fdd96b;
 }
 
 .header-box {
@@ -152,17 +152,7 @@ table th {
 /* ----LANGUAGE BOS---- */
 
 .language-box a {
-  text-decoration: none;
-  font-size: 20px;
-  color: #000;
-  margin-left: 5px;
-  padding: 10px 5px;
-  border-radius: 10px;
-  transition: .2s;
-}
-
-.language-box a:hover {
-  box-shadow: 2px 1px 1px #000;
+  margin-left: 10px;
 }
 
 /* ------OBUT US------ */
