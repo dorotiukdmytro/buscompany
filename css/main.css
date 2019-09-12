@@ -67,6 +67,13 @@ table th {
   z-index: 1;
 }
 
+.nav-main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+}
+
 .nav-items {
   display: flex;
   justify-content: center;
@@ -147,6 +154,11 @@ table th {
 .header-inner button a {
   text-decoration: none;
   color: #000;
+}
+
+.fa-viber {
+  font-size: 28px;
+  color: #8208bb;
 }
 
 /* ----LANGUAGE BOS---- */
@@ -296,4 +308,21 @@ footer {
   text-align: center;
   padding: 10px;
   background-color: #fff;
+}
+
+/*=====Responsive=====*/
+
+@media (max-width: 1160px) {
+/* ---navigation----- */
+  .nav-box {
+  padding: 5px 10px;
+  }
+
+  .nav-items li {
+    margin-right: 5px;
+  }
+
+  .nav-items li a {
+    font-size: 18px;
+  }
 }
