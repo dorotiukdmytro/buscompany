@@ -71,7 +71,7 @@ table th {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 50%;
+  flex-basis: 50%;
 }
 
 .nav-items {
@@ -87,7 +87,7 @@ table th {
 
 .nav-items li a {
   padding: 15px;
-  font-size: 22px;
+  font-size: 26px;
   color: #000;
   font-weight: 700;
   text-decoration: none;
@@ -99,6 +99,19 @@ table th {
   box-shadow: 2px 1px 1px #000;
   background-color: #fdd96b;
 }
+
+.fa-viber {
+  font-size: 28px;
+  color: #8208bb;
+}
+
+/* ----LANGUAGE BOS---- */
+
+.language-box a {
+  margin-left: 10px;
+}
+
+/* ---- HEADER ---- */
 
 .header-box {
   height: 100vh;
@@ -147,7 +160,6 @@ table th {
 }
 
 .header-inner button:hover {
-  padding: 20px 40px;
   background-color:  rgb(255, 224, 130);
 }
 
@@ -156,18 +168,7 @@ table th {
   color: #000;
 }
 
-.fa-viber {
-  font-size: 28px;
-  color: #8208bb;
-}
-
-/* ----LANGUAGE BOS---- */
-
-.language-box a {
-  margin-left: 10px;
-}
-
-/* ------OBUT US------ */
+/* ------ABOUT US------ */
 
 .about-us {
   width: 70%;
@@ -248,8 +249,6 @@ table th {
   font-weight: 700;
 }
 
-/* ----GALLERY---- */
-
 /* ----CONTACT---- */
 .contact {
   background-color: #f3f2f2;
@@ -323,6 +322,140 @@ footer {
   }
 
   .nav-items li a {
+    font-size: 22px;
+  }
+
+  .about-us {
+    width: 80%;
+  }
+
+  .timetable-table {
+    width: 90%;
+  }
+
+  .price-table {
+    width: 70%;
+  }
+
+  .contact-box {
+    width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-box .logo-img {
+    height: 40px;
+    width: 55px;
+  }
+
+  .nav-items li a {
+    padding: 10px;
     font-size: 18px;
+  }
+
+  .fa-viber {
+    font-size: 18px;
+  }
+
+  .nav-box .main-phone {
+    font-size: 14px;
+  }
+
+  .language-box img {
+    width: 20px;
+    height: 15px;
+  }
+
+  .header-inner h1 {
+    font-size: 80px;
+  }
+
+  .header-inner p {
+    font-size: 40px;
+  }
+
+  .header-inner button {
+    padding: 20px 30px;
+    font-size: 25px;
+  }
+
+  .about-us {
+    width: 95%;
+  }
+
+  .timetable-table {
+    width: 100%;
+  }
+
+  .price-table {
+    width: 90%;
+  }
+
+  .contact-box {
+    width: 95%;
+  }
+}
+
+@media (max-width: 780px) {
+  section {
+    padding: 50px 10px;
+  }
+
+  .header-inner h1 {
+    font-size: 60px;
+  }
+
+  .header-inner p {
+    font-size: 22px;
+  }
+
+  .header-inner button {
+    font-size: 20px;
+  }
+
+  .about-us h2,
+  .timetable h2,
+  .price h2,
+  .contact h2 {
+    font-size: 26px;
+  }
+
+  .about-us p,
+  .timetable p {
+    font-size: 16px;
+  }
+
+  .timetable th,
+  .price th {
+    font-size: 20px;
+  }
+
+  .timetable td,
+  .price td,
+  .contact p {
+    font-size: 16px;
+  }
+
+  .timetable td .city {
+    font-size: 16px;
+  }
+  
+  .price-table {
+    width: 100%;
+  }
+
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .adress,
+  .phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
   }
 }
