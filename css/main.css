@@ -127,10 +127,7 @@ table th {
 .menu-icon {
   -webkit-tap-highlight-color: transparent;
   position: fixed;
-  /* top: 20px; */
   right: 10px;
-  /* display: inline-block; */
-  /* z-index: 5; */
 }
 
 .menu-btn {
@@ -207,6 +204,7 @@ table th {
 .header-inner h1,
 .header-inner p {
   margin-bottom: 100px;
+  text-align: center;
 } 
 
 .header-inner h1 {
@@ -218,7 +216,6 @@ table th {
 .header-inner p {
   font-size: 50px;
   font-weight: 700;
-  text-align: center;
 }
 
 .header-inner button {
@@ -567,8 +564,9 @@ footer {
     border-bottom-left-radius: 0;
   }
 
-  .nav-items li {
-    margin-right: 0;
+  .nav-items .link {
+    padding: 10px;
+    font-size: 16px;
   }
 
 }
