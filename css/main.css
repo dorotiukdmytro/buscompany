@@ -183,8 +183,9 @@ table th {
 /* ---- HEADER ---- */
 
 .header-box {
-  height: 100vh;
-  background-image: url("../img/banner.jpg");
+  height: 100%;
+  max-width: 100%;
+  background-image: url("../img/banner.jpg ");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
