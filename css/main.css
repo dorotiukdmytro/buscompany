@@ -100,15 +100,87 @@ table th {
   background-color: #fdd96b;
 }
 
+.viber-phone-box {
+  display: flex;
+  align-items: center;
+}
+
 .fa-viber {
-  font-size: 28px;
+  font-size: 38px;
   color: #8208bb;
+  margin-right: 10px;
+}
+
+.main-phone-box {
+  display: flex;
+  flex-direction: column;
 }
 
 /* ----LANGUAGE BOS---- */
 
 .language-box a {
   margin-left: 10px;
+}
+
+/* ----ICON BUTTON NAV---- */
+
+.menu-icon {
+  -webkit-tap-highlight-color: transparent;
+  position: fixed;
+  /* top: 20px; */
+  right: 10px;
+  /* display: inline-block; */
+  /* z-index: 5; */
+}
+
+.menu-btn {
+  position: relative;
+  display: none;
+  width: 30px;
+  height: 20px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 4px;
+  margin-top: -2px;
+  margin-left: -15px;
+  background-color: #000;
+  border-radius: 20px;
+  transition: .3s;
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+  content: '';
+  display: block;
+}
+
+.menu-btn span::before {
+  transform: translateY(-8px);
+}
+
+.menu-btn span::after {
+  transform: translateY(8px);
+}
+
+.menu-btn-active span {
+  height: 0;
+}
+
+.menu-btn-active span::before {
+  transform: rotate(-45deg);
+}
+
+.menu-btn-active span::after {
+  transform: rotate(45deg);
 }
 
 /* ---- HEADER ---- */
@@ -343,6 +415,7 @@ footer {
 }
 
 @media (max-width: 992px) {
+
   .nav-box .logo-img {
     height: 40px;
     width: 55px;
@@ -354,7 +427,7 @@ footer {
   }
 
   .fa-viber {
-    font-size: 18px;
+    font-size: 28px;
   }
 
   .nav-box .main-phone {
@@ -397,6 +470,29 @@ footer {
 }
 
 @media (max-width: 780px) {
+  .nav-main {
+    display: none;
+  }
+
+  .menu-icon .menu-btn {
+      display: block;
+  }
+
+  .nav-box {
+    height: 50px;
+  }
+
+  .nav-main.show {
+    display: block;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    height: 40px;
+    padding-top: 5px;
+    border-bottom-left-radius: 10px;
+    background-color: #ffe082;
+  }
+
   section {
     padding: 50px 10px;
   }
@@ -458,4 +554,16 @@ footer {
     align-items: center;
     margin-bottom: 20px;
   }
+}
+
+@media (max-width: 576px) {
+  .logo-img {
+    display: none;
+  }
+
+  .nav-main.show {
+    width: 100%;
+    border-bottom-left-radius: 0;
+  }
+
 }
