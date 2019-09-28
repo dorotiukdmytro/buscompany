@@ -218,6 +218,7 @@ table th {
 .header-inner p {
   font-size: 50px;
   font-weight: 700;
+  text-align: center;
 }
 
 .header-inner button {
@@ -566,4 +567,9 @@ footer {
     border-bottom-left-radius: 0;
   }
 
+  .nav-items li {
+    margin-right: 0;
+  }
+
 }
+
