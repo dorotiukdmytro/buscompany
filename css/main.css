@@ -116,7 +116,7 @@ table th {
   flex-direction: column;
 }
 
-/* ----LANGUAGE BOS---- */
+/* ----LANGUAGE BOXS---- */
 
 .language-box a {
   margin-left: 10px;
@@ -187,7 +187,9 @@ table th {
   max-width: 100%;
   background-image: url("../img/banner.jpg ");
   background-repeat: no-repeat;
-  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
