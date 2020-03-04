@@ -183,15 +183,20 @@ table th {
 /* ---- HEADER ---- */
 
 .header-box {
+  background-image: url("../img/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
   /*height: 100%;
   max-width: 100%;*/
-  background-image: url("../img/banner.png ");
+  /*background-image: url("../img/banner.png ");
   background-repeat: no-repeat;
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
 }
 
 .header-inner {
