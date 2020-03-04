@@ -185,9 +185,16 @@ table th {
 .header-box {
   background-image: url("../img/banner.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+
+
+  /*background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover;*/
   /*height: 100%;
   max-width: 100%;*/
   /*background-image: url("../img/banner.png ");
